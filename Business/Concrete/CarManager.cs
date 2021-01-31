@@ -10,13 +10,13 @@ namespace Business.Concrete
 
     public class CarManager : ICarService
     {
-        ICarDal _carDal;
+        ICarDal _carDal; //CarManager veri erişim yöntemleri ile ilgili kurallar koyacak.
 
-        public CarManager(ICarDal carDal)
+        public CarManager(ICarDal carDal) // Hangi veri erişimi geldiyse onu eşitle.
         {
             _carDal = carDal;
         }
-        public List<Car> GetAll()
+        public List<Car> GetAll() // Gelen veri erişiminin GetAll()'unu kullan.
         {
             return _carDal.GetAll();
         }

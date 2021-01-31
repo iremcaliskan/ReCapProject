@@ -7,6 +7,6 @@ namespace Business.Abstract
 {
     public interface ICarService
     {
-        List<Car> GetAll();
+        List<Car> GetAll(); // Interface'in implement edilecek metodu Ürünleri Listeleme
     }
 }
